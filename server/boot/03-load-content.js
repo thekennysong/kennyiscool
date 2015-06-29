@@ -24,9 +24,9 @@ module.exports = function(app) {
       (created) ? log('created Category', category.name)
                 : log('found Category', category.name);
       Product.findOrCreate(
-        {where:{name: 'Draft beer'}}, // find
+        {where:{name: 'Testing 123'}}, // find
         {
-          name: 'Draft beer',
+          name: 'Testing 123',
           price: '1234',
           percentage: '5',
           categoryId: category.id
